@@ -9,7 +9,7 @@ Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/RADIUS/RADIUS-%{version}.tar.gz
 Patch0:		%{name}-paths.patch
 Patch1:		%{name}-Digest-MD5.patch
-BuildRequires:	rpm-perlprov >= 3.0.3-16
+BuildRequires:	rpm-perlprov >= 4.0.2-104
 BuildRequires:	perl >= 5.6
 BuildRequires:	perl-Digest-MD5
 BuildArch:	noarch
