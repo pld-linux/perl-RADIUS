@@ -7,6 +7,7 @@ Release:	8
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/RADIUS/RADIUS-%{version}.tar.gz
+# Source0-md5:	c33fa63e6806d99c5b00507e9fcf63fa
 Patch0:		%{name}-paths.patch
 Patch1:		%{name}-Digest-MD5.patch
 BuildRequires:	rpm-perlprov >= 4.1-13
