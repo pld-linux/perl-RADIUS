@@ -3,7 +3,7 @@ Summary:	RADIUS perl module
 Summary(pl):	Modu³ perla RADIUS
 Name:		perl-RADIUS
 Version:	1.0
-Release:	6
+Release:	7
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/RADIUS/RADIUS-%{version}.tar.gz
