@@ -38,14 +38,12 @@ install -d $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
 
 install example*.pl $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
 
-gzip -9nf Changes README *txt
-
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc *.gz
+%doc Changes README *txt
 %{perl_sitelib}/RADIUS/Dictionary.pm
 %{perl_sitelib}/RADIUS/Packet.pm
 %{_mandir}/man3/*
