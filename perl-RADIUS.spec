@@ -6,7 +6,7 @@ Version:	1.0
 Release:	7
 License:	GPL
 Group:		Development/Languages/Perl
-Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/RADIUS/RADIUS-%{version}.tar.gz
+Source0:	ftp://ftp.cpan.org/pub/CPAN/modules/by-module/RADIUS/RADIUS-%{version}.tar.gz
 Patch0:		%{name}-paths.patch
 Patch1:		%{name}-Digest-MD5.patch
 BuildRequires:	rpm-perlprov >= 3.0.3-16
