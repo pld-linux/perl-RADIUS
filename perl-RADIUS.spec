@@ -3,7 +3,7 @@ Summary:	RADIUS perl module
 Summary(pl):	Modu³ perla RADIUS
 Name:		perl-RADIUS
 Version:	1.0
-Release:	4
+Release:	5
 License:	GPL
 Group:		Development/Languages/Perl
 Group(de):	Entwicklung/Sprachen/Perl
