@@ -1,0 +1,30 @@
+diff -ur RADIUS-1.0.orig/RADIUS/Packet.pm RADIUS-1.0/RADIUS/Packet.pm
+--- RADIUS-1.0.orig/RADIUS/Packet.pm	Thu Aug 21 03:44:17 1997
++++ RADIUS-1.0/RADIUS/Packet.pm	Tue May  1 00:31:22 2001
+@@ -11,7 +11,7 @@
+ 
+ use RADIUS::Dictionary;
+ use Socket;
+-use MD5;
++use Digest::MD5;
+ 
+ sub new {
+   my ($class, $dict, $data) = @_;
+@@ -48,7 +48,7 @@
+   my $pwdin = $self->attr("Password");
+   my $pwdout;
+   for (my $i = 0; $i < length($pwdin); $i += 16) {
+-    $pwdout .= substr($pwdin, $i, 16) ^ MD5->hash($secret . $lastround);
++    $pwdout .= substr($pwdin, $i, 16) ^ Digest::MD5->md5($secret . $lastround);
+     $lastround = substr($pwdin, $i, 16);
+   }
+   $pwdout =~ s/\000*$//;
+@@ -58,7 +58,7 @@
+ # Set response authenticator in binary packet
+ sub auth_resp {
+   my $new = $_[0];
+-  substr($new, 4, 16) = MD5->hash($_[0] . $_[1]);
++  substr($new, 4, 16) = Digest::MD5->md5($_[0] . $_[1]);
+   return $new;
+ }
+ 
