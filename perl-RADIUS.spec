@@ -10,6 +10,7 @@ Group(de):	Entwicklung/Sprachen/Perl
 Group(pl):	Programowanie/Jêzyki/Perl
 Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/RADIUS/RADIUS-%{version}.tar.gz
 Patch0:		%{name}-paths.patch
+Patch1:		%{name}-Digest-MD5.patch
 BuildRequires:	rpm-perlprov >= 3.0.3-16
 BuildRequires:	perl >= 5.6
 BuildRequires:	perl-Digest-MD5
@@ -23,7 +24,8 @@ RADIUS - interfejs do RADIUSa.
 
 %prep
 %setup -q -n RADIUS-%{version}
-%patch -p1
+%patch0 -p1
+%patch1 -p1
 
 %build
 perl Makefile.PL
