@@ -1,0 +1,24 @@
+--- RADIUS-1.0.paths/example-menu.pl	Thu Aug 21 03:42:38 1997
++++ RADIUS-1.0/example-menu.pl	Mon Oct 18 00:22:50 1999
+@@ -1,4 +1,4 @@
+-#!/usr/local/bin/perl -w
++#!/usr/bin/perl -w
+ 
+ use RADIUS::Dictionary;
+ use RADIUS::Packet;
+--- RADIUS-1.0.paths/example-unix.pl	Thu Aug 21 02:55:29 1997
++++ RADIUS-1.0/example-unix.pl	Mon Oct 18 00:22:55 1999
+@@ -1,4 +1,4 @@
+-#!/usr/local/bin/perl -w
++#!/usr/bin/perl -w
+ 
+ use RADIUS::Dictionary;
+ use RADIUS::Packet;
+--- RADIUS-1.0.paths/example-yes.pl	Wed Aug 20 23:23:27 1997
++++ RADIUS-1.0/example-yes.pl	Mon Oct 18 00:22:59 1999
+@@ -1,4 +1,4 @@
+-#!/usr/local/bin/perl -w
++#!/usr/bin/perl -w
+ 
+ use RADIUS::Dictionary;
+ use RADIUS::Packet;
