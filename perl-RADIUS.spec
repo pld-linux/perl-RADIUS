@@ -4,7 +4,7 @@
 #
 %include	/usr/lib/rpm/macros.perl
 Summary:	RADIUS - object-oriented Perl interface to RADIUS
-Summary(pl):	RADIUS - obiektowy interfejs Perla do RADIUSa
+Summary(pl.UTF-8):   RADIUS - obiektowy interfejs Perla do RADIUSa
 Name:		perl-RADIUS
 Version:	1.0
 Release:	9
@@ -25,9 +25,9 @@ RADIUS (RFC2138) specifies a binary packet format which contains
 various values and attributes.  This module provides an interface to
 turn RADIUS packets into Perl data structures and vice-versa.
 
-%description -l pl
-RADIUS (RFC2138) definiuje binarny format pakietów, zawieraj±cy ró¿ne
-warto¶ci i atrybuty. Modu³ ten udostêpnia interfejs przekszta³caj±cy
+%description -l pl.UTF-8
+RADIUS (RFC2138) definiuje binarny format pakietÃ³w, zawierajÄ…cy rÃ³Å¼ne
+wartoÅ›ci i atrybuty. ModuÅ‚ ten udostÄ™pnia interfejs przeksztaÅ‚cajÄ…cy
 pakiety RADIUSa w struktury Perla i odwrotnie.
 
 %prep
