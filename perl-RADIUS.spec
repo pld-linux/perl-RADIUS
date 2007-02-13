@@ -4,7 +4,7 @@
 #
 %include	/usr/lib/rpm/macros.perl
 Summary:	RADIUS - object-oriented Perl interface to RADIUS
-Summary(pl.UTF-8):   RADIUS - obiektowy interfejs Perla do RADIUSa
+Summary(pl.UTF-8):	RADIUS - obiektowy interfejs Perla do RADIUSa
 Name:		perl-RADIUS
 Version:	1.0
 Release:	9
