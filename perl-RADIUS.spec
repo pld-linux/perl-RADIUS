@@ -7,7 +7,7 @@ Summary:	RADIUS - object-oriented Perl interface to RADIUS
 Summary(pl.UTF-8):	RADIUS - obiektowy interfejs Perla do RADIUSa
 Name:		perl-RADIUS
 Version:	1.0
-Release:	9
+Release:	10
 License:	unknown
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/RADIUS/RADIUS-%{version}.tar.gz
