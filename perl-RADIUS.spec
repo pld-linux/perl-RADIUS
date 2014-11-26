@@ -1,7 +1,8 @@
 #
 # Conditional build:
 %bcond_without	tests	# do not perform "make test"
-#
+
+%define		pdir	RADIUS
 %include	/usr/lib/rpm/macros.perl
 Summary:	RADIUS - object-oriented Perl interface to RADIUS
 Summary(pl.UTF-8):	RADIUS - obiektowy interfejs Perla do RADIUSa
@@ -14,15 +15,16 @@ Source0:	http://www.cpan.org/modules/by-module/RADIUS/RADIUS-%{version}.tar.gz
 # Source0-md5:	c33fa63e6806d99c5b00507e9fcf63fa
 Patch0:		%{name}-paths.patch
 Patch1:		%{name}-Digest-MD5.patch
-BuildRequires:	rpm-perlprov >= 4.1-13
-BuildRequires:	perl-devel >= 1:5.8.0
+URL:		http://search.cpan.org/dist/RADIUS/
 BuildRequires:	perl-Digest-MD5
+BuildRequires:	perl-devel >= 1:5.8.0
+BuildRequires:	rpm-perlprov >= 4.1-13
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 RADIUS (RFC2138) specifies a binary packet format which contains
-various values and attributes.  This module provides an interface to
+various values and attributes. This module provides an interface to
 turn RADIUS packets into Perl data structures and vice-versa.
 
 %description -l pl.UTF-8
@@ -48,7 +50,7 @@ install -d $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
 
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
-install example*.pl $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
+cp -p example*.pl $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
 
 %clean
 rm -rf $RPM_BUILD_ROOT
