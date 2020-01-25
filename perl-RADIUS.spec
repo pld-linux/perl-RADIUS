@@ -3,7 +3,6 @@
 %bcond_without	tests	# do not perform "make test"
 
 %define		pdir	RADIUS
-%include	/usr/lib/rpm/macros.perl
 Summary:	RADIUS - object-oriented Perl interface to RADIUS
 Summary(pl.UTF-8):	RADIUS - obiektowy interfejs Perla do RADIUSa
 Name:		perl-RADIUS
